@@ -29,5 +29,7 @@ schema = StructType([
 ])
 
 df = spark.createDataFrame(data=data2, schema=schema)
-df.printSchema()
-df.show(truncate=False)
+
+## create empty dataframe
+
+df2 = spark.createDataFrame([], schema)
